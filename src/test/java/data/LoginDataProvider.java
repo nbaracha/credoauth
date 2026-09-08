@@ -9,20 +9,17 @@ public class LoginDataProvider {
     @DataProvider(name = "negativeAuthData")
     public static Object[][] getNegativeAuthData() {
         return new Object[][] {
-                // GE
                 {Language.GE, RandomStringUtils.randomAlphabetic(8), RandomStringUtils.randomAlphanumeric(10), "მონაცემები არასწორია"},
-                {Language.GE, "", RandomStringUtils.randomAlphanumeric(8), "შეიყვანეთ მომხმარებლის სახელი"},
-                {Language.GE, RandomStringUtils.randomAlphabetic(8), "", "შეიყვანეთ პაროლი"},
+                {Language.GE, "", RandomStringUtils.randomAlphanumeric(8), "სავალდებულო ველი"},
+                {Language.GE, RandomStringUtils.randomAlphabetic(8), "", "სავალდებულო ველი"},
 
-                // EN
-                {Language.EN, RandomStringUtils.randomAlphabetic(8), RandomStringUtils.randomAlphanumeric(10), "Incorrect credentials"},
-                {Language.EN, "", RandomStringUtils.randomAlphanumeric(8), "Enter username"},
-                {Language.EN, RandomStringUtils.randomAlphabetic(8), "", "Enter password"},
+                {Language.EN, RandomStringUtils.randomAlphabetic(8), RandomStringUtils.randomAlphanumeric(10), "Please make sure the entered details are correct"},
+                {Language.EN, "", RandomStringUtils.randomAlphanumeric(8), "Required field"},
+                {Language.EN, RandomStringUtils.randomAlphabetic(8), "", "Required field"},
 
-                // RU
-                {Language.RU, RandomStringUtils.randomAlphabetic(8), RandomStringUtils.randomAlphanumeric(10), "Неверные данные"},
-                {Language.RU, "", RandomStringUtils.randomAlphanumeric(8), "Введите имя пользователя"},
-                {Language.RU, RandomStringUtils.randomAlphabetic(8), "", "Введите пароль"}
+                {Language.RU, RandomStringUtils.randomAlphabetic(8), RandomStringUtils.randomAlphanumeric(10), "Пожалуйста, убедитесь, что введенные данные верны."},
+                {Language.RU, "", RandomStringUtils.randomAlphanumeric(8), "Обязательное поле"},
+                {Language.RU, RandomStringUtils.randomAlphabetic(8), "", "Обязательное поле"}
         };
     }
 }
