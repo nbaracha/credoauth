@@ -10,7 +10,7 @@ public class LoginPage {
     private final WebDriverWait wait;
     public LanguageSelectorComponent languageSelector;
 
-    // ვხდით public-ს, რომ სტეპებმა პირდაპირ მიაკითხონ უპრობლემოდ
+
     public final By usernameInput = By.id("username");
     public final By passwordInput = By.id("password");
     public final By loginButton = By.xpath("//button[@arialabel='sign in']");
